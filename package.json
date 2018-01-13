@@ -1,0 +1,17 @@
+{
+  "name": "callback-to-promise",
+  "version": "1.0.0",
+  "description": "Simple library to turn callbacks into promises",
+  "main": "callback-to-promise.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js",
+    "build": "./node_modules/uglify-es/bin/uglifyjs callback-to-promise.js -o callback-to-promise.min.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "uglify-es": "^3.3.5"
+  }
+}
