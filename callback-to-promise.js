@@ -1,3 +1,4 @@
+(function(){
 let api
 api = function(opts,mask){
 	return api.wrapFunction.call(api,opts,mask)
@@ -104,8 +105,9 @@ api.mkPair = function(opts,obj,key,rejkey){
 	return pair
 	}
 
-if (module && module.exports){
+if (typeof module !='undefined' && module.exports){
 	module.exports=api
 	} else {
-		CallbackToPromise = api
+		callbackToPromise = api
 	}
+})()
